@@ -51,6 +51,7 @@ goto setting
 
 :install
 echo Jump to the download page in five seconds...
+echo Please rename the file to [ %JARFILE% ] !!
 timeout 5
 start "" %FILEURL%
 pause
