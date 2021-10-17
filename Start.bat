@@ -14,26 +14,26 @@ if %SERVERTYPE% == 0 (
 )
 if %SERVERTYPE% == 1 (
     if %PLUGINTYPE% == 0 (
-        set JARFILE=minecraft_bukkit_server.%MCVER%.jar
+        set JARFILE=minecraft_bukkit_server.%MCVER%.%PLUGINVER%.jar
         set FILEURL=https://getbukkit.org/download/craftbukkit
     )
     if %PLUGINTYPE% == 1 (
-        set JARFILE=minecraft_spigot_server.%MCVER%.jar
+        set JARFILE=minecraft_spigot_server.%MCVER%.%PLUGINVER%.jar
         set FILEURL=https://getbukkit.org/download/spigot
     )
     if %PLUGINTYPE% == 2 (
-        set JARFILE=minecraft_paper_server.%MCVER%.jar
+        set JARFILE=minecraft_paper_server.%MCVER%.%PLUGINVER%.jar
         set FILEURL=https://papermc.io/downloads
     )
     goto search_complete
 )
 if %SERVERTYPE% == 2 (
     if %MODSTYPE% == 0 (
-        set JARFILE=minecraft_forge_server.%MCVER%.jar
+        set JARFILE=minecraft_forge_server.%MCVER%.%MODSVER%.jar
         set FILEURL=https://files.minecraftforge.net/net/minecraftforge/forge/
     )
     if %MODSTYPE% == 1 (
-        set JARFILE=minecraft_fabric_server.%MCVER%.jar
+        set JARFILE=minecraft_fabric_server.%MCVER%.%MODSVER%.jar
         set FILEURL=https://fabricmc.net/use/
     )
     goto search_complete
